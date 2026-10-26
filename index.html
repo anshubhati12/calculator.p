@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator | CodeSoft Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <a href="#" class="brand">calc<span>.</span></a>
+      <span class="project-label">PERSONAL TOOL / 001</span>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="calc-header">
+        <div>
+          <p class="eyebrow">YOUR EVERYDAY TOOL</p>
+          <h1>Calculator</h1>
+        </div>
+        <div class="status-dot" title="Ready"></div>
+      </div>
+
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div id="expression" class="expression">Ready to calculate</div>
+        <output id="result" class="result" aria-label="Display">0</output>
+      </div>
+
+      <div class="keypad" id="keypad">
+        <button type="button" class="key utility" data-action="clear">AC</button>
+        <button type="button" class="key utility" data-action="sign" aria-label="Change sign">+/−</button>
+        <button type="button" class="key utility" data-action="percent">%</button>
+        <button type="button" class="key operator" data-operator="/" aria-label="Divide">÷</button>
+
+        <button type="button" class="key" data-number="7">7</button>
+        <button type="button" class="key" data-number="8">8</button>
+        <button type="button" class="key" data-number="9">9</button>
+        <button type="button" class="key operator" data-operator="*" aria-label="Multiply">×</button>
+
+        <button type="button" class="key" data-number="4">4</button>
+        <button type="button" class="key" data-number="5">5</button>
+        <button type="button" class="key" data-number="6">6</button>
+        <button type="button" class="key operator" data-operator="-" aria-label="Subtract">−</button>
+
+        <button type="button" class="key" data-number="1">1</button>
+        <button type="button" class="key" data-number="2">2</button>
+        <button type="button" class="key" data-number="3">3</button>
+        <button type="button" class="key operator" data-operator="+" aria-label="Add">+</button>
+
+        <button type="button" class="key utility" data-action="backspace" aria-label="Backspace">⌫</button>
+        <button type="button" class="key" data-number="0">0</button>
+        <button type="button" class="key" data-action="decimal">.</button>
+        <button type="button" class="key equals" data-action="equals" aria-label="Calculate result">=</button>
+      </div>
+
+      <p class="keyboard-hint">TIP: Use your keyboard to calculate faster.</p>
+    </section>
+
+    <footer class="page-footer">
+      <span>Built with HTML, CSS & JavaScript</span>
+      <span>© <span id="year"></span> Anshu Bhati</span>
+    </footer>
+  </main>
+</body>
+</html>
